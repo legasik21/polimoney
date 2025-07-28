@@ -4,26 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Name Brand</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
-<img>
-    <h1>Мой первый HTML-документ</h1>
-    <h2>Знакомимся с тегами</h2>
-    <p>Lorem <b>ipsum dolor sit</b> amet consectetur <em>adipisicing elit</em>.
-        Accusantium deserunt totam pariatur voluptates aut, voluptatem dolor enim illo explicabo!
-        Corrupti delectus sed non suscipit consequatur qui.
-        Officiis enim asperiores assumenda!
-    </p>
-    <ul>
-        <li>text1</li>
-        <li><b>text2</b></li>
-        <li><em>text3</em>></li>
-    </ul>
-    <a target="_blank" href="https://www.google.com/search?q=Google.com.">Перейти на Google</a>
-    <img src="/image/Instagram post - 382.png" alt="Instagram post" width="300" height="300"
-    />
-    
+<body>
+    <div class="header-wrapper" id="header-container"></div>
+    <main>
+        <section class="hero">
+            <div class="conteiner-bg">
+                <div class="hero__card-1">
+                    <div class="conteiner">
+                        <h1>Unlocking the Future of Smart Investments</h1>
+                        <p>Discover Investor's Key – Unlocking Smart Investments. Navigate markets with precision using
+                            TradeSync Central. Maximize opportunities and minimize risks in a new era of trading. Your
+                            future,
+                            brilliantly illuminated.
+                        </p>
+                        <button class="circle-button">Open account</button>
+                    </div>
+                </div>
+                <div class="hero__card-2"></div>
+                <div class="hero__card-3"></div>
+            </div>
+        </section>
+    </main>
+    <!-- <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="logo-area">
+                <img src="/icons/header/logo.svg" alt="logo-min">
+            </div>
+            <section class="contact-area">
+                <h3 class="title">Contact</h3>
+                <ul class="contact-info">
+                    <li class="items">adressa</li>
+                    <li class="items">+00 (00)-000-000-00</li>
+                    <li class="items">support@name.com</li>
+                </ul>
+                <p class="year">© 2024</p>
+            </section>
+            <section class="notify-area">
+                <h3 class="title">Risk Notification:</h3>
+                <p class="description">Transactions offered on this site may only be carried out by fully capable adults
+                    (at least 18 years of age). Transactions with financial instruments offered by this website may be
+                    considered high-risk transactions.
+                </p>
+                <p class="description">There are risks of partial or complete loss of funds in such transactions.
+                    Accordingly, you are
+                    strongly advised not to
+                    Accordingly, you are strongly advised not to invest or trade funds, the loss of which, in the case
+                    of an unfavorable outcome of such trades, you cannot afford.
+                </p>
+                <p class="description">We recommend you to carefully read our Risk Disclosure Statement (Risk Notice),
+                    the
+                    Client Agreement
+                    and other governing documents before proceeding with transactions on this Website.
+                </p>
+                <ul class="payment-info">
+                    <li class="items">
+                        <img src="icons/footer/4.svg" alt="">
+                    </li>
+                    <li class="items">
+                        <img src="icons/footer/5.svg" alt="">
+                    </li>
+                    <li class="items">
+                        <img src="icons/footer/6.svg" alt="">
+                    </li>
+                    <li class="items">
+                        <img src="icons/footer/7.svg" alt="">
+                    </li>
+                    <li class="items">
+                        <img src="icons/footer/8.svg" alt="">
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </footer> -->
 </body>
 
 </html>
+
+<script>
+    fetch('header.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+</script>
